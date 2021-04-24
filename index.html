@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Questions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Menu de navigation du site -->
+<ul class="navbar">
+</ul>
+
+<!-- Contenu principal -->
+<h1>Questions</h1>
+
+<h2 onclick="displayOtherPage('database')">Base de données</h2>
+<iframe id="database" src="pages/database.html" allowfullscreen=true ></iframe>
+
+</body>
+</html>
+
+<script>
+  function displayOtherPage(toDisplay) {
+    var x = document.getElementById(toDisplay);
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+</script>
+  

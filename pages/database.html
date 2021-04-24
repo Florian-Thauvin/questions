@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<h3 onclick="displayElement('database_niveau_1')">Niveau 1</h3>
+<div id="database_niveau_1" class="hide">
+    <div>
+        <p class="question">A quoi sert une base de données</p>
+        <p class="response">A sauvegarder des données de façon ordonnée</p>
+    </div>
+
+    <div>
+        <p class="question">Citer quelques bases de données</p>
+        <p class="response">H2, PostGrey, MySql...</p>
+    </div>
+
+    <div>
+        <p class="question">Qu'est-ce qu'une table ? Un attribut ?</p>
+        <p class="response">Une table correspond à un objet manipulable (ex: une personne)</p>
+        <p class="response">Une attribut correspond à une propriétée d'un objet (ex: l'âge d'une personne)</p>
+    </div>
+
+    <div>
+        <p class="question">Quels sont les actions possible (manipulations) en base de données ?</p>
+        <p class="response">Création, modification, mise à jour, sélection</p>
+    </div>
+</div>
+
+<h3 onclick="displayElement('database_niveau_2')">Niveau 2</h3>
+<div id="database_niveau_2" class="hide">
+    <div>
+        <p class="question">Quelle est la différence entre une association et une composition ?</p>
+        <p class="response">Une association permet à deux objets indépendants d'avoir une relation entre eux</p>
+        <p class="response">Une composition ajouter un objet dit composite à un autre objet qui lui est indépendant. L'objet composite ne peut pas exister seul.</p>
+    </div>
+</div>
+
+<h3 onclick="displayElement('database_niveau_3')">Niveau 3</h3>
+<div id="database_niveau_3" class="hide">
+
+</div>
+
+<h3 onclick="displayElement('database_niveau_4')">Niveau 4</h3>
+<div id="database_niveau_4" class="hide">
+    <div>
+        
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    function displayElement(toDisplay) {
+      var x = document.getElementById(toDisplay);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>

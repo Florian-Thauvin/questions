@@ -1,0 +1,41 @@
+html {
+    user-select: none
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+h2 {
+    color: navy;
+    margin-left: 40px;
+}
+
+h3 {
+    color: navy;
+}
+
+iframe {
+    margin-left: 60px;
+    width: 90%;
+    height: 600px;
+    display: none;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.question {
+
+}
+
+.response {
+    margin-left: 40px;
+}

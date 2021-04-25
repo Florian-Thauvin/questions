@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javatitle>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<h3 onclick="displayElement('java_niveau_1')">Niveau 1</h3>
+<div id="java_niveau_1" class="hide">
+    <div>
+        <p class="question">Qu'est-ce que la classe Objet ?</p>
+        <p class="response">La classe objet correspond à la classe de base Java, définissant des méthodes simples</p>
+    </div>
+    <div>
+        <p class="question">Que doit-on faire pour nettoyer la mémoire en Java ? Doit-on implémenter des destructeurs ?</p>
+        <p class="response">Rien, le garbage collector le fait automatiquement</p>
+    </div>
+</div>
+
+<h3 onclick="displayElement('java_niveau_2')">Niveau 2</h3>
+<div id="java_niveau_2" class="hide">
+    <div>
+        <p class="question">Quelle est la différence entre une list et un set ?</p>
+        <p class="response">Une liste est ordonnée, le set non</p>
+    </div>
+    <div>
+        <p class="question">Qu'est-ce qu'une exception ? Comment peut-on la gérer</p>
+        <p class="response">Une exception correpond à une erreur levée par le code</p>
+        <p class="response">On peut la catcher, la logger ou la propager</p>
+    </div>
+    <div>
+        <p class="question">Quel est l'utilité du static ? Du final ?</p>
+        <p class="response">Le static permet d'accéder à la valeur sans déclarer une instance de la classe</p>
+        <p class="response">Le final correspond à une donnée non modifiable</p>
+    </div>
+    <div>
+        <p class="question">Quels sont les portées en Java ? Comment se comportent-elles en héritage ?</p>
+        <p class="response">Public: tout le monde peut y accéder</p>
+        <p class="response">Protected: uniquement les classes dans le même package / héritant de la classe peuvent y accéder.</p>
+        <p class="response">Private: personne mis à part la classe elle même peut y accéder</p>
+    </div>
+    <div>
+        <p class="question">Qu'est-ce que Maven ?</p>
+        <p class="response">Il s'agit d'un gestionnaire de dépendance et compilation pour Java</p>
+    </div>
+</div>
+
+<h3 onclick="displayElement('java_niveau_3')">Niveau 3</h3>
+<div id="java_niveau_3" class="hide">
+    <div>
+        <p class="question">Quel est la différence entre deux objets avec les mêmes attributs, mais déclarés avec un new différent ? Que retourne le equals et le == ?</p>
+        <p class="response">Les deux objets ont des cases mémoires différentes. Le equals retournera true, alors que le == non</p>
+    </div>
+    <div>
+        <p class="question">Qu'est-ce qu'un singleton ?</p>
+        <p class="response">Il s'agit d'un objet instancié une seule fois dans l'application</p>
+    </div>
+    <div>
+        <p class="question">A quoi sert le hashcode ?</p>
+        <p class="response">A attribuer une signature à un objet à partir de ses données. On peut l'utiliser pour vérifier l'intégrité d'une donnée cryptée par exemple.</p>
+    </div>
+    <div>
+        <p class="question">Qu'est-ce qu'un Thread ? Un Scheduled ?</p>
+        <p class="response">Un trhead correspond à une exécution parallèle. Un scheduled correspond à un execution programmée de façon temporelle (périodique ou non) dans un thread</p>
+    </div>
+    <div>
+        <p class="question">Est-ce que le java dépend de la machine ?</p>
+        <p class="response">Non</p>
+    </div>
+    <div>
+        <p class="question">Peut-on faire de l'héritage multiple ?</p>
+        <p class="response">Non, mis à part via des interfaces</p>
+    </div>
+</div>
+
+<h3 onclick="displayElement('java_niveau_4')">Niveau 4</h3>
+<div id="java_niveau_4" class="hide">
+
+</div>
+
+</body>
+</html>
+
+<script>
+    function displayElement(toDisplay) {
+      var x = document.getElementById(toDisplay);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>

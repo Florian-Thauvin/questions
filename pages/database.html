@@ -13,18 +13,15 @@
         <p class="question">A quoi sert une base de données</p>
         <p class="response">A sauvegarder des données de façon ordonnée</p>
     </div>
-
     <div>
         <p class="question">Citer quelques bases de données</p>
         <p class="response">H2, PostGrey, MySql...</p>
     </div>
-
     <div>
         <p class="question">Qu'est-ce qu'une table ? Un attribut ?</p>
         <p class="response">Une table correspond à un objet manipulable (ex: une personne)</p>
         <p class="response">Une attribut correspond à une propriétée d'un objet (ex: l'âge d'une personne)</p>
     </div>
-
     <div>
         <p class="question">Quels sont les actions possible (manipulations) en base de données ?</p>
         <p class="response">Création, modification, mise à jour, sélection</p>
@@ -38,11 +35,31 @@
         <p class="response">Une association permet à deux objets indépendants d'avoir une relation entre eux</p>
         <p class="response">Une composition ajouter un objet dit composite à un autre objet qui lui est indépendant. L'objet composite ne peut pas exister seul.</p>
     </div>
+    <div>
+      <p class="question">Qu'est-ce qu'une cardinalité ? Citer quelques exemples</p>
+      <p class="response">Une cardinalité correspond à l'information par rapport aux nombres d'objets dans une relation</p>
+      <p class="response">0-1, 1-1, 0-n, 1-n, [0,1]-[0,n]...</p>
+    </div>    
+    <div>
+      <p class="question">Qu'est-ce qu'un identifiant ? A quoi sert-il ? Quels sont les contraintes associés ?</p>
+      <p class="response">Un identifiant permet d'identifier un objet de façon unique à partir d'un ou d'un ensemble d'attributs.</p>
+      <p class="response">Il permet de manipuler l'objet plus simplement</p>
+      <p class="response">Cet identifiant doit être unique dans la table</p>
+    </div>
 </div>
 
 <h3 onclick="displayElement('database_niveau_3')">Niveau 3</h3>
 <div id="database_niveau_3" class="hide">
-
+  <div>
+    <p class="question">Qu'est-ce qu'une relation unidirectionnelle ? Bidirectionnelle ?</p>
+    <p class="response">Dans une relation unidirectionnelle, un seul des deux objets porte l'information relative à la relation</p>
+    <p class="response">Dans une relation bidirectionnelle, les deux objets ont une information relative à la relation</p>
+  </div>
+  <div>
+    <p class="question">Quel est la différence entre un attribut technique et naturel ?</p>
+    <p class="response">L'attribut technique sert uniquement à la manipulation de l'objet</p>
+    <p class="response">L'attribut naturel correspond aux informations relatives à l'objet</p>
+  </div>
 </div>
 
 <h3 onclick="displayElement('database_niveau_4')">Niveau 4</h3>
